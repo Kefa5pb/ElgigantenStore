@@ -1,0 +1,2 @@
+# ElgigantenStore
+ Automated tests
