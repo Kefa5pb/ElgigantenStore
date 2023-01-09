@@ -12,7 +12,7 @@ public interface Constants {
     // Konstanta koja predstavlja xpath liste artikala u search
     String articleXpath = "//a[@class='product-tile__link kps-link']";
     // Konstanta za dugme koje dodaje artikal u korpu
-    String addToCartButtonXpath = "//button[@class ='btn btn--100 btn--1st btn--expanded ng-star-inserted']";
+    String addToCartButtonXpath = "//button[@elk-ta='addToCart-button']";
     // Konstanta za kontejner menu na header stranici
     String headerContainerMenu = "//div[@style = 'transition-duration: 0ms; transform: translate3d(80px, 0px, 0px);']//a";
 

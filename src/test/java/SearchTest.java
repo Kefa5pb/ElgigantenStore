@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 // SearchTest nasledjuje BaseTest jer je BaseTest osnovna klasa za testiranje, u njoj se nalazi metoda za otvaranje drajvera
@@ -47,8 +49,11 @@ public class SearchTest extends BaseTest {
         WebElement article = headerPage.getArticle(Constants.articleXpath,5);
         article.click();
         Thread.sleep(10000);
+        // To je dugme za dodavanje u korpu
         WebElement addToCartButton = driver.findElement(By.xpath(Constants.addToCartButtonXpath));
-        Thread.sleep(15000);
+        // Metoda za skrolovanje do add to cart dugmeta, bez ovoga nije moglo da pronadje element na stranici
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", addToCartButton);
+        Thread.sleep(3000);
         addToCartButton.click();
 
     }
