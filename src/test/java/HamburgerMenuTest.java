@@ -3,7 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-// SearchTest nasledjuje HamburgerMenuTest jer je BaseTest osnovna klasa za testiranje, u njoj se nalazi metoda za otvaranje drajvera
+// SearchTest nasledjuje HamburgerMenuTest a on nasledjuje jer je BaseTest osnovna klasa za testiranje, u njoj se nalazi metoda za otvaranje drajvera
 public class HamburgerMenuTest extends BaseTest{
 
     // Test
