@@ -26,9 +26,9 @@ public class BaseTest {
         driver.get(Constants.HOME_URL);
         return driver;
     }
-
     // Metod koji prikazuje tekst u konzoli
-    private void print(String text) {
+    public void print(String text) {
         System.out.println(text);
     }
+
 }
