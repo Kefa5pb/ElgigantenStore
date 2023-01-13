@@ -29,4 +29,14 @@
 
     // Konstanta za potrosacku korpu, DUGME
     String shopingCartButton = "//button[@data-ta = 'miniCart-button']";
+
+    //Konstanta za upisivanje maila kod logovanja
+        String logInMail = "//input[@data-ta = 'loginEmail-input']";
+
+
+    // Konstanta za click kod logovanja
+        String logInButton = "//button[@data-ta = 'login-button']";
+
+    // Konstanta za dugme za slanje koda na mail kod logovanja
+        String sendCodeButton = "//button[@id = 'email_ver_but_send']";
 }
