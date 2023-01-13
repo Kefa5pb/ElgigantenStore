@@ -13,7 +13,7 @@ public class HamburgerMenuPage extends BasePage {
     WebElement hamburgerMenu;
 
     // Konstruktor sa jednim parametrom
-    HamburgerMenuPage(ChromeDriver driver) {
+    HamburgerMenuPage(ChromeDriver driver) throws InterruptedException {
         super(driver);
         print("Menu page, nalazi se na hamburger meniju");
 
@@ -29,7 +29,7 @@ public class HamburgerMenuPage extends BasePage {
 
     // Metod koji ima dva parametra, xpath koji sadrzi putanju elementa u nasem slucaju sekcije i textItem koji predstavlja naziv na stavki menija
     // Metod vraca element koji nadje
-    public WebElement getMeniItem(String xpath, String textItem) {
+    public WebElement getMeniItem(String xpath, String textItem) throws InterruptedException {
         print("clickOnMainMenuLink ( " + textItem + " )");
 
     // Lista elemenata koji se nalaze na sekciji u meniji

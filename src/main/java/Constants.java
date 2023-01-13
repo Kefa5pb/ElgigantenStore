@@ -37,6 +37,6 @@
     // Konstanta za click kod logovanja
         String logInButton = "//button[@data-ta = 'login-button']";
 
-    // Konstanta za dugme za slanje koda na mail kod logovanja
-        String sendCodeButton = "//button[@id = 'email_ver_but_send']";
+    // Konstanta za link za povratak na Home page
+        String tillbakaTillInloggning = "//a[@href = '#']";
 }

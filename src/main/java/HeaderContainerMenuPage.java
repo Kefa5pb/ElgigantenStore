@@ -12,7 +12,7 @@ public class HeaderContainerMenuPage extends BasePage{
     @FindBy (xpath = "//elk-image-slider//elk-carousel[@class = 'carousel ng-star-inserted']//div[@class = 'carousel__scroll-container']//swiper[@class = 'swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden']//div[@class = 'swiper-wrapper']")
     WebElement headerContainerMenu;
 
-    HeaderContainerMenuPage(ChromeDriver driver) {
+    HeaderContainerMenuPage(ChromeDriver driver) throws InterruptedException {
         super(driver);
         print("Menu page, nalazi se na Kontejner meniju Header stranice");
 
@@ -22,7 +22,7 @@ public class HeaderContainerMenuPage extends BasePage{
 
     // Metod koji ima dva parametra, xpath koji sadrzi putanju elementa u nasem slucaju sekcije i textItem koji predstavlja naziv na stavki menija
     // Metod vraca element koji nadje
-    public WebElement getMeniItem(String textItem) {
+    public WebElement getMeniItem(String textItem) throws InterruptedException {
 
     // Lista elemenata koji se nalaze na sekciji u meniji
     // Ovo je nacin dohvatanje liste menija preko elementa koji je definisan u klasi a to je HEADER CONTAINER MENU element

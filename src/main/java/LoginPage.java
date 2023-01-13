@@ -8,7 +8,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[@data-ta = 'login-button__loggedOut']")
     WebElement logInButton;
 
-    public LoginPage(ChromeDriver driver) {
+    public LoginPage(ChromeDriver driver) throws InterruptedException {
         super(driver);
         print("Login Page");
         PageFactory.initElements(driver,this);
