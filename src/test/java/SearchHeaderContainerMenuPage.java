@@ -8,6 +8,7 @@ public class SearchHeaderContainerMenuPage extends BaseTest {
 
     /**
      * Find "Vitvaror" elements using Header Container Menu.
+     * Steps:
      * 1.Navigate to Home page
      * 2.On the Header Container Page click on "Vitvaror" element
      * expected result: Vitvaror elements is shown.

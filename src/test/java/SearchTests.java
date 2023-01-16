@@ -10,6 +10,7 @@ public class SearchTests extends BaseTest {
 
         /**
          * In search type in "Samsung" text and show offer.
+         * Steps:
          * 1.Navigate to Home page
          * 2.In search field type "Samsung" text
          * 3.Click on search
@@ -33,6 +34,7 @@ public class SearchTests extends BaseTest {
 
         /**
          * Find Article "Harman" in Search field and click on 5. element in "Harman" offer.
+         * Steps:
          * 1.Navigate to Home page
          * 2.Type in "Harman" in search field
          * 3.Click on search
@@ -56,6 +58,7 @@ public class SearchTests extends BaseTest {
 
         /**
          * Adding Article to the Chart using searh menu.
+         * Steps:
          * 1.Navigate to Home page
          * 2.Type in "Harman" in the search field
          * 3.Click on search
